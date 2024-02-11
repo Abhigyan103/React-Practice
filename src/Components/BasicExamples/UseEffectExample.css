@@ -1,0 +1,40 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+& {
+    height: 100%;
+}
+body, .usersCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+.profileCard {
+    height: 100px;
+    width: 400px;
+    background: rgb(60, 60, 60);
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(255, 156, 156);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.profileCard:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 0 rgb(255, 156, 156);
+}
+.avatar {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    
+}

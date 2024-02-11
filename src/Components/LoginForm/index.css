@@ -1,0 +1,44 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+& {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: all .2s ease-in-out;
+}
+input:hover{
+    border-color: blue;
+}
+input:focus{
+    outline: none;
+    border-color:blueviolet;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    background: blueviolet;
+    /* position: absolute; */
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+button:hover{
+    background: blue;
+}
